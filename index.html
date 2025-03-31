@@ -1,97 +1,468 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity=
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <nav class="navbar background">
-        <div class="logo">
-            <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" style="height: 30px;" alt="Logo">
-        </div>
-        <ul class="nav-list">
-            <li><a href="#web">Web Technology</a></li>
-            <li><a href="#program">C Programming</a></li>
-            <li><a href="#course">Courses</a></li>
-        </ul>
-        <div class="rightnav">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div>
-    </nav>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Emrit Diyal</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">
+                              Portfolio
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services">
+                              Services
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact">
+                              Contact Me
+                          </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <section class="firstsection">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big" id="web">Web Technology
-                </h1>
-                <p class="text-small">
-                    HTML stands for HyperText Markup Language.
-                    It is used to design web pages using a markup
-                    language. HTML is the combination of Hypertext
-                    and Markup language. Hypertext defines the
-                    link between the web pages. A markup language
-                    is used to define the text document within tag
-                    which defines the structure of web pages.
-                    HTML is a markup language that is used by the
-                    browser to manipulate text, images, and other
-                    content to display it in the required format.
-                </p>
-
-
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Emrit Diyal</h1>
+                <h4 class="sub-heading">
+                    A Software Engineer with 3 years of Experience.
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
             </div>
         </div>
     </section>
 
-    <section class="secondsection">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big" id="program">
-                    C Programming
-                </h1>
-                <p class="text-small">
-                    C is a procedural programming language. It
-                    was initially developed by Dennis Ritchie
-                    as a system programming language to write
-                    operating system. The main features of C
-                    language include low-level access to memory,
-                    simple set of keywords, and clean style,
-                    these features make C language suitable for
-                    system programming like operating system or
-                    compiler development.
-                </p>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Portfolio</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/designImage2.avif" 
+                                 alt="Web Design Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para blue-text">Designing</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/webDevelopment2.avif" 
+                                 alt="Web Development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                        <p class="small-para blue-text">Development</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/SEOImage2.avif" alt="SEO Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">SEO</h3>
+                        <p class="small-para blue-text">Optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/contentImage2.avif" 
+                                 alt="Content Writting Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Content Writing
+                          </h3>
+                        <p class="small-para blue-text">Writing</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/wordpressImage2.avif" 
+                                 alt="Wordpress Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Wordpress Dev
+                          </h3>
+                        <p class="small-para blue-text">
+                              Content Management System
+                          </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/videoEditing2.avif" 
+                                 alt="Video Editing Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Video Editing
+                          </h3>
+                        <p class="small-para blue-text">Editing</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="paras">
-            <h1 class="sectionTag text-big">Java</h1>
-            <p class="sectionSubTag text-small">
-                Java has been one of the most popular
-                programming language for many years.
-                Java is Object Oriented. However it is
-                not considered as pure object oriented
-                as it provides support for primitive
-                data types (like int, char, etc) The
-                Java codes are first compiled into byte
-                code (machine independent code). Then
-                the byte code is run on Java Virtual
-                Machine (JVM) regardless of the
-                underlying architecture.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                Hi! I’m Leonard, a passionate web developer with a love for creating functional and beautiful web experiences.  
+
+            </p>
+            <p>
+                I hold an advanced certificate in Java Web Development,
+                and a BSc degree in Computer Science from the University of South Africa.
+                I have achieved competency in various subjects including Web Development Fundamentals
+                (HTML, JavaScript Object Oriented Programming, RDBMS), Software Engineering, Systems Analysis and Design,
+                Java Web Programming Fundamentals (Servlets and JSP)
+                XML, Advanced JavaScript,
+                laying the foundation for logical problem-solving skills.
+                I have developed communication, presentation, technical report writing and team working through subjects like personal development skills. 
+
+                I am continually committed to learn, leverage transferable skills and gain practically experience.
+                My career goal is get certified and be an expert in my field of work.
             </p>
         </div>
+        <div class="about-image">
+            <img src="./Images/heroImg2.avif" alt="About Image">
+        </div>
     </section>
 
-    <footer class="background">
-        <p class="text-footer">
-            Copyright ©-All rights are reserved
-        </p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Services</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">SEO</h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Content Writting
+                          </h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining of websites. 
+                              It includes aspects such as web design, 
+                              web publishing, web programming, and 
+                              database management. It is the creation 
+                              of an application that works over the 
+                              internet i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining of websites. 
+                              It includes aspects such as web design, 
+                              web publishing, web programming, and 
+                              database management. It is the creation of an
+                            application that works over the internet i.e. 
+                              websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fab fa-wordpress-simple"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Wordpress Dev
+                          </h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining of websites. 
+                              It includes aspects such as web design, 
+                              web publishing, web programming, and 
+                              database management. It is the creation 
+                              of an application that works over the 
+                              internet i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Video Editing
+                          </h3>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                        <p class="small-para">
+                            Web development refers to the creating, 
+                              building, and maintaining
+                            of websites. It includes aspects such as 
+                              web design, web publishing,
+                            web programming, and database management. 
+                              It is the creation of an
+                            application that works over the internet 
+                              i.e. websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" 
+                           placeholder="My Name">
+                    <input class="form-controls" type="text" 
+                           placeholder="My Email">
+                    <input class="form-controls" type="text" 
+                           placeholder="+27723507514">
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">leonardphokane1@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+27 723507514</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">FAX</h5>
+                    <p class="contact-text">+27 723507514</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">105 Tlama-Tlama Section, RSA</p>
+                 
+                    <p>Tembisa, 1632</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2025 All rights reserved |
+                This portfolio website template is created 
+                  by Leonard Phokane
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-
