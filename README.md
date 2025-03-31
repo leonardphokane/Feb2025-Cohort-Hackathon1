@@ -1,6 +1,4 @@
-# REAME.md
-
-Hackathon 1: Portfolio Building
+# Hackathon 1: Portfolio Building
 
 Heads up!
 One assignment submission is allowed per group.
