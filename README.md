@@ -1,4 +1,4 @@
-# Hackathon 1: Portfolio Building
+# Feb 2025Cohort Hackathon 1: Portfolio Building
 
 Heads up!
 One assignment submission is allowed per group.
